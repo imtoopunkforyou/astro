@@ -1,7 +1,7 @@
 import os, shutil
 
 def clear_foulder():
-    folder = '/home/imtoopunkforyou/prog/astro/saves'
+    folder = '/home/imtoopunkforyou/astro/saves'
     for filename in os.listdir(folder):
         file_path = os.path.join(folder, filename)
         try:

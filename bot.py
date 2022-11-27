@@ -47,7 +47,7 @@ def save_file(message):
     
 @bot.message_handler(commands=['last'])
 def get_save(message):
-    onlyfiles = [f for f in listdir('/home/imtoopunkforyou/prog/astro/saves') if isfile(join('/home/imtoopunkforyou/prog/astro/saves', f))]
+    onlyfiles = [f for f in listdir('/home/imtoopunkforyou/astro/saves') if isfile(join('/home/imtoopunkforyou/astro/saves', f))]
     file = open(f'./saves/{onlyfiles[0]}', 'rb')
     bot.send_document(message.chat.id, file)
 
